@@ -1,0 +1,22 @@
+{
+  "name": "alarm3d/yii2-fullcalendar-scheduler",
+  "description": "Yii2 widget for fullcalendar scheduler module",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.0",
+    "yiisoft/yii2": ">=2.0.9",
+    "yiisoft/yii2-jui": ">=2.0.6",
+    "npm-asset/fullcalendar": "v3.8.0",
+    "npm-asset/fullcalendar-scheduler": "1.9.1"
+  },
+  "authors": [
+        {
+            "name": "alarm3d"
+        }
+    ],
+  "autoload": {
+    "psr-4": {
+      "alarm3d\\fullcalendarscheduler\\": "src"
+    }
+  }
+}
