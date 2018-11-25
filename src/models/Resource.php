@@ -12,6 +12,7 @@ class Resource extends CalendarModel
     public $id;
     /** @var  string The text on an resource's element */
     public $title;
+    public $groupId;
     /** @var  string Events associated with this resources will have their backgrounds and borders colored.
      * Any CSS string color format can be specified, like "#f00" or "rgb(255,0,0)".
      * This value will take precedence over the global eventColor option and the Event Source Object color option,
@@ -40,7 +41,7 @@ class Resource extends CalendarModel
     {
         return [
             [['id', 'title'], 'required'],
-            [['eventColor', 'eventBackgroundColor', 'eventBorderColor', 'eventTextColor', 'eventClassName', 'children', 'parentId', 'parent'], 'safe'],
+            [['groupId', 'eventColor', 'eventBackgroundColor', 'eventBorderColor', 'eventTextColor', 'eventClassName', 'children', 'parentId', 'parent'], 'safe'],
         ];
     }
 }
